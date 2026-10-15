@@ -31,29 +31,32 @@ body {
     font-size: 15px;
 }
 
-input {
-    position: absolute;
+#menu {
     display: none;
-}
-
-.menu-icon {
-    display: block;
-    position: relative;
 }
 
 .navbar {
     display: none;
+    flex-direction: column;
 }
 
-.navbar:hover {
-    display: block;
+.navbar a {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    padding: 0 18px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
 }
 
 #stats {
     display: grid;
     background-color: var(--primary-background);
     border: 1px solid white;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas: 
     "main main stat-1 stat-2"
     "main main stat-3 stat-4";
@@ -143,12 +146,12 @@ input {
     padding-left: 1rem;
 }
 
-@media (max-width:980px) {
+@media (max-width: 850px) {
     #stats {
         display: grid;
         background-color: var(--primary-background);
         border: 1px solid white;
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(auto-fit, 1fr)!important;
     }
 
     .main {
