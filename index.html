@@ -15,19 +15,36 @@
   </style>-->
 </head>
 <body>
-  <div class="header">
-    <h2> Bridge Collective</h2>
-  </div>
+  <header id="header">
+      <div class="logo">■ Bridge Collective</div>
+      <div class="menu-icon">
+        <input type="checkbox" id="menu">
+        <label for="menu"><img src="images/icon-menu.svg" alt="menu" class="hamburger"></label>
+        <nav class="navbar">
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Our Work</a></li>
+            <li><a href="#">Partners</a></li>
+            <li><a href="#">Annual Report</a></li>
+            <li><a href="#"></a>Donate</li>
+          </ul>
+        </nav>
+      </div>
+  </header>
 
-  <div id="stats">
+  <main id="stats">
     <div class="main">
-      <h2>A classroom for every child.</h2>
+      <p class="header">A classroom for every child.</p>
 
       <p>We fund the schools, train the teachers, and measure what works — so every child we reach today becomes a graduate tomorrow.</p>
     </div>
 
     <div class="stat-1">
-      <h2>2.4M</h2>
+      <div class="header">
+        <img src="images/icon-sparkle.svg" alt="sparkle">
+
+        <h2>2.4M</h2>
+      </div>
 
       <p class="head">
         Students reached
@@ -39,7 +56,11 @@
     </div>
 
     <div class="stat-2">
-      <h2>1,284</h2>
+      <div class="header">
+        <img src="images/icon-plus.svg" alt="plus">
+
+        <h2>1,284</h2>
+      </div>
 
       <p class="head">Schools partnered</p>
 
@@ -47,9 +68,13 @@
     </div>
 
     <div class="stat-3">
-      <h2>
-        38K
-      </h2>
+      <div class="header">
+        <img src="images/icon-arrow-right.svg" alt="right-arrow">
+        
+        <h2>
+          38K
+        </h2>
+      </div>
     
       <p class="head">
         Teachers trained
@@ -61,9 +86,12 @@
     </div>
 
     <div class="stat-4">
-      <h2>
-        3.1×
-      </h2>
+      <div class="header">
+        <img src="images/icon-trending-up.svg" alt="trending">
+        <h2>
+          3.1×
+        </h2>
+      </div>
 
       <p class="head">
         Graduation lift
@@ -73,15 +101,15 @@
         Partner schools outperform national averages 3x.
       </p>
     </div>
-  </div>
+  </Main>
 
-  <div class="footer">
-    © 2026 Bridge Collective
-    Registered charity 12345678
+  <div id="footer">
+    <p>© 2026 Bridge Collective</p>
+    <p>Registered charity 12345678</p>
   </div>
 
     <!-- Menu panel — hidden until the hamburger is activated -->
-    About
+   <!-- About
     Our Work
     Partners
     Annual Report
@@ -89,7 +117,7 @@
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Kanu Kelechi</a>.
   </div>
 </body>
 </html>
